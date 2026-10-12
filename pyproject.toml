@@ -1,0 +1,29 @@
+[project]
+name = "new-snowflake-de25-rikard-oledal"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "RIKARD OLEDAL", email = "rikardoledal@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pandas>=3.0.5",
+    "dlt[parquet,snowflake]>=1.30.0",
+    "ipykernel>=7.3.0",
+    "dbt-snowflake>=1.12.1",
+    "dbt-core>=1.12.5",
+    "streamlit>=1.64.0",
+    "dotenv>=0.9.9",
+    "snowflake-connector-python>=4.7.3",
+    "dagster-dlt>=0.29.25",
+    "dagster-dbt>=0.29.25",
+    "dagster-webserver>=1.13.25",
+]
+
+[project.scripts]
+new-snowflake-de25-rikard-oledal = "new_snowflake_de25_rikard_oledal:main"
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"
